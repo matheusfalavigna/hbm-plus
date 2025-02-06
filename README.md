@@ -2,6 +2,30 @@
 
 Projeto que simula medições e verifica irregularidades, disparando alertas de forma automatizada.
 
+## Demonstração da Aplicação
+
+### GIF de Funcionamento
+
+![Funcionamento da aplicação](assets/hbm-plus.gif)
+
+### Prints
+
+#### Print do Database
+
+![Print do Database](assets/database.png)
+
+#### createMeasurement
+
+![createMeasurement](assets/createMeasurement.png)
+
+#### findAllIrregularity
+
+![findAllIrregularity](assets/findAllIrregularity.png)
+
+#### findAllMeasurement
+
+![findAllMeasurement](assets/findAllMeasurement.png)
+
 ## Tecnologias utilizadas
 
 - [Nest.js](https://github.com/nestjs/nest)
@@ -10,6 +34,7 @@ Projeto que simula medições e verifica irregularidades, disparando alertas de 
 - [Axios](https://axios-http.com/ptbr/docs/intro)
 - [Jest](https://jestjs.io/pt-BR/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [Insomnia](https://insomnia.rest/)
 
 ## Como rodar o projeto
 
