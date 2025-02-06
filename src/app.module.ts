@@ -6,6 +6,8 @@ import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Measurement } from './measurements/entities/measurement.entity';
 import { MeasurementsModule } from './measurements/measurements.module';
+import { IrregularitiesModule } from './irregularities/irregularities.module';
+import { Irregularity } from './irregularities/entities/irregularity.entity';
 
 @Module({
   imports: [
@@ -23,8 +25,9 @@ import { MeasurementsModule } from './measurements/measurements.module';
       autoLoadEntities: true,
       synchronize: true,
     }),
-    TypeOrmModule.forFeature([Measurement]),
+    TypeOrmModule.forFeature([Measurement, Irregularity]),
     MeasurementsModule,
+    IrregularitiesModule,
   ],
 })
 export class AppModule {}
