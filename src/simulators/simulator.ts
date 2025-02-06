@@ -15,7 +15,7 @@ const sendMeasurement = async (value: number): Promise<void> => {
     await axios.post('http://localhost:3000/measurements', { value });
     console.log(`Medição: ${value}`);
   } catch (error) {
-    console.error('Erro ao enviar medição:', error.message);
+    console.error('Erro ao enviar medição');
   }
 };
 

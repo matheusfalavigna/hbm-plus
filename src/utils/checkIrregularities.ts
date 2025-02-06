@@ -39,6 +39,8 @@ const checkIrregularities = async (
     return;
   }
 
+  console.log('Contagem de irregularidades: ', irregularCount);
+
   if (irregularCount >= MIN_IRREGULAR_COUNT) {
     await irregularitiesService.createIrregularity({ type: 'bip' });
     console.log('bip');
