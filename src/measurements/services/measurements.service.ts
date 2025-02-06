@@ -17,4 +17,8 @@ export class MeasurementsService {
     const measurement = this.measurementRepository.create(createMeasurementDto);
     return this.measurementRepository.save(measurement);
   }
+
+  async findAll(): Promise<Measurement[]> {
+    return this.measurementRepository.find();
+  }
 }
